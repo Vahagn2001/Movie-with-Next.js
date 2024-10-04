@@ -10,7 +10,6 @@ export default function MovieTrailer({ isOpen, onClose, movie }) {
     queryKey: ["movieTrailer", movie.id],
     enabled: isOpen,
   });
-  console.log(trailers);
 
   const trailer = trailers && trailers.results.find((movie) => movie.site === "YouTube");
   return (
